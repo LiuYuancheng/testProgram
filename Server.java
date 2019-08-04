@@ -57,7 +57,7 @@ public class Server implements Hello {
 	try {
 	    Server obj = new Server();
 	    stub = (Hello) UnicastRemoteObject.exportObject(obj, 0);
-	    registry = LocateRegistry.getRegistry(2001);
+	    registry = LocateRegistry.getRegistry();
 	    registry.bind("Hello", stub);
 
 	    System.err.println("Server ready");
