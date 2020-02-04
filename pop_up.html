@@ -1,0 +1,17 @@
+<html>
+<head>
+ <title>JavaScript Popup Example 3</title>
+</head>
+ 
+<script type="text/javascript">
+function exitpop()
+{
+    my_window = window.open("", "mywindow1", "status=1,width=350,height=150");
+    my_window.document.write('<h1>Popup Test!</h1>');
+}
+</script>
+ 
+<body onunload="javascript: exitpop()" >
+<h1>JavaScript Popup Example 4</h1>
+</body>
+</html>
